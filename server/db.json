@@ -1,5 +1,5 @@
 {
-  "teachers": [
+  "listadocentes": [
     { "id": 1,  "name": "Sofia",  "lastname": "Gomez Perez", "age": "30"},
     { "id": 2,  "name": "Juan",   "lastname": "Gomez Perez", "age": "30"},
     { "id": 3,  "name": "Manuel", "lastname": "Gomez Perez", "age": "30"},
