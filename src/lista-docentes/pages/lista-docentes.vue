@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="lista-docentes">
     <h1>Lista de docentes</h1>
   </div>
 </template>

@@ -16,6 +16,11 @@ const routes = [
     component: () => import('@/teachers/pages/teachers')
   },
   {
+    path:'/lista-docentes',
+    name:'lista-dicentes',
+    component: () => import('@/lista-docentes/pages/lista-docentes')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting

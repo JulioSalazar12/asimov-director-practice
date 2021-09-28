@@ -25,12 +25,17 @@
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="white--text text--accent-4">
           <v-list-item>
+            <v-btn @click.stop="drawer = !drawer">
+              <v-icon>mdi-chevron-left</v-icon>
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
             <v-btn plain to="/teachers" color="black" class="white--text">
               Resumen general
             </v-btn>
           </v-list-item>
           <v-list-item>
-            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+            <v-btn plain to="/about" color="black" class="white--text">
               Profesores
             </v-btn>
           </v-list-item>
