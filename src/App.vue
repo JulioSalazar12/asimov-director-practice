@@ -30,7 +30,7 @@
             </v-btn>
           </v-list-item>
           <v-list-item>
-            <v-btn plain to="/teachers" color="black" class="white--text">
+            <v-btn plain to="/home" color="black" class="white--text">
               Resumen general
             </v-btn>
           </v-list-item>

@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
   },
@@ -17,7 +17,7 @@ const routes = [
   },
   {
     path:'/lista-docentes',
-    name:'lista-dicentes',
+    name:'lista-docentes',
     component: () => import('@/lista-docentes/pages/lista-docentes')
   },
   {
