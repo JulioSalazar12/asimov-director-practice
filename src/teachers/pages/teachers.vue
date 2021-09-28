@@ -2,8 +2,10 @@
   <v-container>
     <v-row>
       <!--  -->
+      <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
       <v-col cols="12" sm="6" md="8">
-        <h5 class="font-weight-bold">Información del docente</h5>
+        <h1 class="font-weight-bold">Información del docente</h1>
+        <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
         <v-card class="mx-auto" max-width="1010" outlined>
           <v-card-title class="text-h5 mb-1 teacher-profile-name font-weight-bold white--text">
             Docente: {teachers.name} {teachers.lastName}

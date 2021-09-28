@@ -1,6 +1,6 @@
 import http from '@/core/http-common'
 class ListaDocentesService {
-    endpoint = '/lista-docentes';
+    endpoint = '/listadocentes';
 
     getAll(){
         return http.get(this.endpoint);
