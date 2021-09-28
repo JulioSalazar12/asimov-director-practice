@@ -35,7 +35,7 @@
             </v-btn>
           </v-list-item>
           <v-list-item>
-            <v-btn plain to="/about" color="black" class="white--text">
+            <v-btn plain to="/lista-docentes" color="black" class="white--text">
               Profesores
             </v-btn>
           </v-list-item>
