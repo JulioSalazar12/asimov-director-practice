@@ -11,9 +11,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/teachers',
-    name: 'teachers',
+    path:'/teachers',
+    name:'teachers',
     component: () => import('@/teachers/pages/teachers')
+  },
+  {
+    path:'/lista-docentes',
+    name:'lista-dicentes',
+    component: () => import('@/lista-docentes/pages/lista-docentes')
   },
   {
     path: '/about',

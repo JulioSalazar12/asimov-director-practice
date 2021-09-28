@@ -1,24 +1,88 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary white--text">
-      <v-app-bar-title>
-        <span class="display-1"></span>
-        <v-divider inset vertical class="mx-1"></v-divider>
-        <span>Asimov</span>
-      </v-app-bar-title>
+    <v-app-bar app color="black white--text">
+      <v-app-bar-nav-icon color="white" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <div class="d-flex align-center">
+        <v-img
+          alt="Asimov Logo"
+          class="shrink mr-2"
+          contain
+          src="../images/graduation.png"
+          transition="scale-transition"
+          width="40"
+        />
+
+        <v-app-bar-title>
+          <span class="display-1">Asimov</span>
+          <v-divider inset vertical class="mx-1"></v-divider>
+        </v-app-bar-title>
+      </div>
       <v-spacer></v-spacer>
-      <v-btn plain style="text-transform: capitalize" to="/home" color="white">Home</v-btn>
-      <v-btn plain style="text-transform: capitalize" to="/teachers" color="white">Teachers</v-btn>
-      <v-btn plain style="text-transform: capitalize" to="/about" color="white">About</v-btn>
+      <span class="mr-1">Perfil</span>
+      <v-icon color="white">{{ icons.mdiAccount }}</v-icon>
     </v-app-bar>
+    <v-navigation-drawer v-model="drawer" absolute bottom temporary color="black">
+      <v-list nav dense>
+        <v-list-item-group v-model="group" active-class="white--text text--accent-4">
+          <v-list-item>
+            <v-btn @click.stop="drawer = !drawer">
+              <v-icon>mdi-chevron-left</v-icon>
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/teachers" color="black" class="white--text">
+              Resumen general
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/about" color="black" class="white--text">
+              Profesores
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+              Crear Anuncio
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+              Competencias
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+              Top
+            </v-btn>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-main>
-      <v-container fluid>
-        <router-view/>
-      </v-container>
+      <router-view/>
+
     </v-main>
   </v-app>
 </template>
 
-<style lang="scss">
+<script>
+import { mdiAccount } from '@mdi/js';
 
-</style>
+export default {
+  name: 'App',
+
+  data: () => ({
+    drawer: false,
+    group: null,
+    icons: {
+      mdiAccount,
+    },
+  }),
+
+  watch: {
+    group () {
+      this.drawer = false
+    },
+  },
+};
+</script>
