@@ -1,25 +1,16 @@
 {
-  "tutorials": [
-    { "id": 1, "title": "The Vue Tutorial", "description": "The best tips and tutorials for vue" , "published": false},
-    { "id": 2, "title": "Amazing Microsoft .NET Core", "description": "Meekly" , "published": true},
-    { "id": 3, "title": "JavaScript for All", "description": "tips and tricks about JavaScript from scratch" , "published": false},
-    { "id": 4, "title": "Vue Unleashed", "description": "The best ti" , "published": false}
-  ],
-  "instructors": [
-    { "id": 1, "name": "John Doe"},
-    { "id": 2, "name": "Willian Norton"}
-  ],
-  "courses": [
-    { "id": 1, "name": "Vue from Scratch", "description": "Learn Vue from A to Z", "instructorId": 1},
-    { "id": 2, "name": "Vuetify and Beyond", "description": "Learn Vuetify like a Pro", "instructorId": 2},
-    { "id": 3, "name": "ASP.NET core Advance", "description": "Learn what nobody wants to tell you about ASP.NET core", "instructorId": 1}
-  ],
-  "topics": [
-    { "id": 1, "name": "Vue"},
-    { "id": 2, "name": "ASP.NET Core"}
-  ],
-  "scopes": [
-    { "id": 1, "courseId": 1, "topicId": 1, "level": "Basic"},
-    { "id": 2, "courseId": 3, "topicId": 2, "level": "Advance"}
+  "teachers": [
+    { "id": 1,  "name": "Sofia",  "lastname": "Gomez Perez", "age": "30"},
+    { "id": 2,  "name": "Juan",   "lastname": "Gomez Perez", "age": "30"},
+    { "id": 3,  "name": "Manuel", "lastname": "Gomez Perez", "age": "30"},
+    { "id": 4,  "name": "Luis",   "lastname": "Gomez Perez", "age": "30"},
+    { "id": 5,  "name": "Marco",  "lastname": "Gomez Perez", "age": "30"},
+    { "id": 6,  "name": "Jose",   "lastname": "Gomez Perez", "age": "30"},
+    { "id": 7,  "name": "Julio",  "lastname": "Gomez Perez", "age": "30"},
+    { "id": 8,  "name": "Yordy",  "lastname": "Gomez Perez", "age": "30"},
+    { "id": 9,  "name": "Andre",  "lastname": "Gomez Perez", "age": "30"},
+    { "id": 10, "name": "Omar",   "lastname": "Gomez Perez", "age": "30"},
+    { "id": 11, "name": "Ernesto","lastname": "Gomez Perez", "age": "30"},
+    { "id": 12, "name": "Camila", "lastname": "Gomez Perez", "age": "30"}
   ]
 }
