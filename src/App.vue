@@ -34,9 +34,21 @@
               Profesores
             </v-btn>
           </v-list-item>
-          <v-list-item><v-list-item-title class="white--text">Crear anuncio</v-list-item-title></v-list-item>
-          <v-list-item><v-list-item-title class="white--text">Competencias</v-list-item-title></v-list-item>
-          <v-list-item><v-list-item-title class="white--text">Top</v-list-item-title></v-list-item>
+          <v-list-item>
+            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+              Crear Anuncio
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+              Competencias
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+              Top
+            </v-btn>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
