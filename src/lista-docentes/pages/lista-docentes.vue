@@ -8,10 +8,10 @@
         <v-col cols="12" sm="12">
           <v-card class="mx-auto" width="345" max-height="350">
             <v-card-text>
-              <div>Docente</div>
+              <div>Teacher</div>
               <p id="nomTeacher" class="text-h4 text--primary">{{teacher.name}}</p>
               <div>{{ teacher.lastname }}</div>
-              <p>{{teacher.age}}</p>
+              <p>Edad: {{teacher.age}}</p>
             </v-card-text>
             <v-card-actions>
               <v-btn text color="indigo accent-4" to="/teachers">Learn More</v-btn>
