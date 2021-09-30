@@ -60,8 +60,12 @@
 
     <v-main>
       <router-view/>
-
     </v-main>
+    <v-footer padless class="mt-5" color="black">
+      <v-col class="text-center white--text" cols="12">
+        © {{ new Date().getFullYear() }} — <strong>CyberSoft  Co., Ltd. All Rights Reserved.</strong>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
