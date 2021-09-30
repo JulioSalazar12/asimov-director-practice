@@ -40,7 +40,7 @@
             </v-btn>
           </v-list-item>
           <v-list-item>
-            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+            <v-btn plain to="/ads" color="black" class="white--text">
               Crear Anuncio
             </v-btn>
           </v-list-item>
