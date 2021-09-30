@@ -5,6 +5,10 @@ class ListaDocentesService {
     getAll(){
         return http.get(this.endpoint);
     }
+
+    getById(id){
+        return http.get(`${this.endpoint}/${id}`)
+    }
 }
 
 export default new ListaDocentesService();
