@@ -17,8 +17,11 @@
     </form>
     <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
     <v-col cols="12" md="12">
+      <h1>Ads comfirmed</h1>
+    </v-col>
+    <v-col cols="12" md="12">
       <div v-for="ad in ads" :key="ad.id">
-        <v-card class="mx-auto" elevation="2">
+        <v-card class="mx-auto mb-2" elevation="2">
           <v-card-title>{{ad.title}}</v-card-title>
           <v-card-text>{{ad.description}}</v-card-text>
         </v-card>
