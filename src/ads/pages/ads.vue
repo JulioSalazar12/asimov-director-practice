@@ -16,12 +16,16 @@
       </v-row>
     </form>
     <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
-    <div v-for="ad in ads" :key="ad.id">
-      <v-card class="mx-auto" elevation="2">
-        <v-card-title>{{ad.title}}</v-card-title>
-        <v-card-text>{{ad.description}}</v-card-text>
-      </v-card>
-    </div>
+    <v-col cols="12" md="12">
+      <div v-for="ad in ads" :key="ad.id">
+        <v-card class="mx-auto" elevation="2">
+          <v-card-title>{{ad.title}}</v-card-title>
+          <v-card-text>{{ad.description}}</v-card-text>
+        </v-card>
+      </div>
+    </v-col>
+
+
   </div>
 </template>
 
@@ -43,11 +47,7 @@ export default {
     ],
   }),
   created() {
-    AdsService.getAll()
-        .then((response) => {
-          this.ads = response.data.map(this.getDisplayAd);
-          console.log(response.data);
-        })
+    this.refreshList()
   },
   methods: {
     getDisplayAd(ad){
@@ -72,9 +72,9 @@ export default {
       }
       AdsService.create(ad)
         .then((response) => {
-        console.log(response.data)
-      }),
-      this.refreshList()
+        console.log(response.data);
+        this.refreshList();
+      })
     }
   }
 }
