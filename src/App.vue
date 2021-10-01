@@ -31,22 +31,22 @@
           </v-list-item>
           <v-list-item>
             <v-btn plain to="/home" color="black" class="white--text">
-              Resumen general
+              General summary
             </v-btn>
           </v-list-item>
           <v-list-item>
             <v-btn plain to="/lista-docentes" color="black" class="white--text">
-              Profesores
+              Teachers
             </v-btn>
           </v-list-item>
           <v-list-item>
             <v-btn plain to="/ads" color="black" class="white--text">
-              Crear Anuncio
+              Create ad
             </v-btn>
           </v-list-item>
           <v-list-item>
             <v-btn plain to="/" color="black" class="white--text">
-              Competencias
+              Competences
             </v-btn>
           </v-list-item>
           <v-list-item>
@@ -72,7 +72,7 @@
           </v-list-item>
           <v-list-item>
             <v-btn plain to="/" color="black" class="white--text">
-              competencies
+              competences
             </v-btn>
           </v-list-item>
         </v-list-item-group>

@@ -15,17 +15,17 @@
                 <!--  -->
                 <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
                 <v-col cols="12" sm="6" md="8">
-                  <h4 class="font-weight-bold">Detalle curso</h4>
+                  <h4 class="font-weight-bold">Course detail</h4>
                   <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
                   <v-card class="mx-auto" max-width="1010">
                     <v-card-title class="text-h5 mb-1 teacher-profile-name font-weight-bold white--text">
-                      Curso: {{courseSelected.name}}
+                      Course: {{courseSelected.name}}
                     </v-card-title>
                     <v-list-item three-line>
                       <v-list-item-avatar tile size="80" color="grey"></v-list-item-avatar>
                       <v-list-item-content>
                         <v-list-item-content>
-                          Información detalla del curso:<br>
+                          Detailed information:<br>
                           Description: {{courseSelected.description}} <br>
                         </v-list-item-content>
                         <v-list-item-content>
@@ -79,19 +79,19 @@
                 <v-col cols="4">
                   <v-card class="mx-auto" max-width="220">
                     <v-card-title class="justify-center white--text title-competences">
-                      <h4>Competencias</h4>
+                      <h4>Competences</h4>
                     </v-card-title>
                     <v-card-actions>
                       <v-list-item>
                         <v-list-item-content>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 1</v-btn>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 2</v-btn>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 3</v-btn>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 4</v-btn>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 5</v-btn>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 6</v-btn>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 7</v-btn>
-                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 8</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 1</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 2</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 3</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 4</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 5</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 6</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 7</v-btn>
+                          <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 8</v-btn>
                         </v-list-item-content>
                       </v-list-item>
                     </v-card-actions>

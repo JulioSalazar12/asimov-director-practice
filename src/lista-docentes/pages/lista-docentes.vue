@@ -2,7 +2,7 @@
   <div class="lista-docentes">
     <v-row align="center" class="px-3 mx-auto">
       <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
-      <v-col cols="12" md="12"><h1>List of Teachers</h1></v-col>
+      <v-col cols="12" md="12"><h1>Teachers</h1></v-col>
       <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
       <div v-for="teacher in listadocentes" :key="teacher.id">
         <v-col cols="12" sm="12">
@@ -11,7 +11,7 @@
               <div>Teacher</div>
               <p id="nomTeacher" class="text-h4 text--primary">{{teacher.name}}</p>
               <div>{{ teacher.lastname }}</div>
-              <p>Edad: {{teacher.age}}</p>
+              <p>Age: {{teacher.age}}</p>
             </v-card-text>
             <v-dialog max-width="1500px" overlay-color="white" overlay-opacity="50">
               <template v-slot:activator="{on, attrs}">
@@ -22,20 +22,20 @@
                   <!--  -->
                   <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
                   <v-col cols="12" sm="6" md="8">
-                    <h1 class="font-weight-bold">Información del docente</h1>
+                    <h1 class="font-weight-bold">Teacher's information</h1>
                     <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
                     <v-card class="mx-auto" max-width="1010">
                       <v-card-title class="text-h5 mb-1 teacher-profile-name font-weight-bold white--text">
-                        Docente: {{teacherSelected.name}} {{teacherSelected.lastname}}
+                        Teacher : {{teacherSelected.name}} {{teacherSelected.lastname}}
                       </v-card-title>
                       <v-list-item three-line>
                         <v-list-item-avatar tile size="80" color="grey"></v-list-item-avatar>
                         <v-list-item-content>
                           <v-list-item-content>
-                            Información personal:<br>
-                            Nombre(s): {{teacherSelected.name}}<br>
-                            Apellidos: {{teacherSelected.lastname}}<br>
-                            Edad: {{teacherSelected.age}} <br>
+                            Personal information:<br>
+                            Name(s): {{teacherSelected.name}}<br>
+                            Last name: {{teacherSelected.lastname}}<br>
+                            age: {{teacherSelected.age}} <br>
                           </v-list-item-content>
                         </v-list-item-content>
 
@@ -47,7 +47,7 @@
                   <!-- Progreso del docente -->
                   <v-col cols="6" md="4">
                     <v-container class="ml-3">
-                      <h5 class="font-weight-bold mb-3">Progreso total del docente</h5>
+                      <h5 class="font-weight-bold mb-3">Teacher progress</h5>
                       <p class="display-3 font-weight-bold">25%</p>
                     </v-container>
                   </v-col>
@@ -56,7 +56,7 @@
                   <!-- Unidades -->
                   <v-col cols="8">
                     <v-container>
-                      <h5 class="unit-bar-title">Puntos obtenidos por progreso</h5>
+                      <h5 class="unit-bar-title">Point for progress</h5>
                       <v-card class="mx-auto mt-1 mb-5">
                         <v-list-item>
                           <figure class="mr-4">
@@ -64,17 +64,17 @@
                           </figure>
 
                           <v-list-item-content class="unit-bar-text">
-                            <h4>Suma de puntos hasta ahora</h4>
-                            <p>Los puntos totales que tiene actualmente</p>
+                            <h4>Sum of points</h4>
+                            <p>Total points</p>
                           </v-list-item-content>
 
                           <v-spacer></v-spacer>
-                          <p class="unit-bar-value">985 puntos</p>
+                          <p class="unit-bar-value">985 points</p>
                         </v-list-item>
 
                       </v-card>
 
-                      <h5 class="unit-bar-title">Unidades en progreso y culminadas</h5>
+                      <h5 class="unit-bar-title">Units in progress and completed</h5>
                       <v-card class="mx-auto mt-3 mb-2">
                         <v-list-item>
                           <figure class="mr-4">
@@ -82,8 +82,8 @@
                           </figure>
 
                           <v-list-item-content class="unit-bar-text">
-                            <h4>(Unidad 01)</h4>
-                            <p>Descripción de la unidad</p>
+                            <h4>(Unit 01)</h4>
+                            <p>Unit description</p>
                           </v-list-item-content>
 
                           <v-spacer></v-spacer>
@@ -98,12 +98,12 @@
                           </figure>
 
                           <v-list-item-content class="unit-bar-text">
-                            <h4>(Unidad 02)</h4>
-                            <p>Descripción de la unidad</p>
+                            <h4>(Unit 02)</h4>
+                            <p>Unit description</p>
                           </v-list-item-content>
 
                           <v-spacer></v-spacer>
-                          <p class="unit-bar-value">Por comenzar</p>
+                          <p class="unit-bar-value">Pending</p>
                         </v-list-item>
                       </v-card>
 
@@ -114,19 +114,19 @@
                   <v-col cols="4">
                     <v-card class="mx-auto" max-width="220">
                       <v-card-title class="justify-center white--text title-competences">
-                        <h4>Competencias</h4>
+                        <h4>Competences</h4>
                       </v-card-title>
                       <v-card-actions>
                         <v-list-item>
                           <v-list-item-content>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 1</v-btn>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 2</v-btn>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 3</v-btn>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 4</v-btn>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 5</v-btn>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 6</v-btn>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 7</v-btn>
-                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competencia 8</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 1</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 2</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 3</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 4</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 5</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 6</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 7</v-btn>
+                            <v-btn rounded x-small class="white--text mt-1 mb-1" color="black accent-4">Competence 8</v-btn>
                           </v-list-item-content>
                         </v-list-item>
                       </v-card-actions>
