@@ -17,7 +17,7 @@
     </form>
     <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
     <v-col cols="12" md="12">
-      <h1>Ads comfirmed</h1>
+      <h1>Ads confirmed</h1>
     </v-col>
     <v-col cols="12" md="12">
       <div v-for="ad in ads" :key="ad.id">
