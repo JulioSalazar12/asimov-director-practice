@@ -45,13 +45,34 @@
             </v-btn>
           </v-list-item>
           <v-list-item>
-            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+            <v-btn plain to="/" color="black" class="white--text">
               Competencias
             </v-btn>
           </v-list-item>
           <v-list-item>
-            <v-btn plain to="/lista-docentes" color="black" class="white--text">
+            <v-btn plain to="/" color="black" class="white--text">
               Top
+            </v-btn>
+          </v-list-item>
+          <p>---------------------------------------------</p>
+          <v-list-item>
+            <v-btn plain to="/list-courses" color="black" class="white--text">
+              Units
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/" color="black" class="white--text">
+              advertisements
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/" color="black" class="white--text">
+              average progress
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn plain to="/" color="black" class="white--text">
+              competencies
             </v-btn>
           </v-list-item>
         </v-list-item-group>
