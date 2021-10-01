@@ -15,7 +15,7 @@
                 <!--  -->
                 <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
                 <v-col cols="12" sm="6" md="8">
-                  <h1 class="font-weight-bold">Información del docente</h1>
+                  <h4 class="font-weight-bold">Detalle curso</h4>
                   <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
                   <v-card class="mx-auto" max-width="1010">
                     <v-card-title class="text-h5 mb-1 teacher-profile-name font-weight-bold white--text">
@@ -27,6 +27,10 @@
                         <v-list-item-content>
                           Información detalla del curso:<br>
                           Description: {{courseSelected.description}} <br>
+                        </v-list-item-content>
+                        <v-list-item-content>
+                          <v-progress-linear rounded value="45"
+                                             color="primary" height="15"></v-progress-linear>
                         </v-list-item-content>
                       </v-list-item-content>
                     </v-list-item>
@@ -40,7 +44,7 @@
                   <v-container>
                     <h5 class="unit-bar-title">Items</h5>
                       <div v-for="item in courseSelected.items" :key="item.id">
-                        <v-card class="mx-auto" max-width="344">
+                        <v-card class="mx-auto mt-8 mb-8" max-width="860">
 
                           <v-card-title>{{ item.title }}</v-card-title>
 
