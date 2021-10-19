@@ -12,14 +12,14 @@
               <p id="nomTeacher" class="text-h4 text--primary">{{teacher.name}}</p>
               <div>{{ teacher.lastname }}</div>
               <p>Age: {{teacher.age}}</p>
+              <v-btn text :to="`/docente/${teacher.id}`">see more</v-btn>
             </v-card-text>
-            <v-dialog max-width="1500px" overlay-color="white" overlay-opacity="50">
+            <!--<v-dialog max-width="1500px" overlay-color="white" overlay-opacity="50">
               <template v-slot:activator="{on, attrs}">
                 <v-btn text color="indigo accent-4" datk v-on="on" v-bind="attrs" @click="getTeacher(teacher.id)">Learn More</v-btn>
               </template>
               <v-container>
                 <v-row>
-                  <!--  -->
                   <v-col cols="12" md="12"><v-spacer></v-spacer></v-col>
                   <v-col cols="12" sm="6" md="8">
                     <h1 class="font-weight-bold">Teacher's information</h1>
@@ -44,7 +44,6 @@
                     </v-card>
                   </v-col>
 
-                  <!-- Progreso del docente -->
                   <v-col cols="6" md="4">
                     <v-container class="ml-3">
                       <h5 class="font-weight-bold mb-3">Teacher progress</h5>
@@ -53,7 +52,7 @@
                   </v-col>
                 </v-row>
                 <v-row>
-                  <!-- Unidades -->
+
                   <v-col cols="8">
                     <v-container>
                       <h5 class="unit-bar-title">Point for progress</h5>
@@ -110,7 +109,6 @@
                     </v-container>
 
                   </v-col>
-                  <!-- Competencias -->
                   <v-col cols="4">
                     <v-card class="mx-auto" max-width="220">
                       <v-card-title class="justify-center white--text title-competences">
@@ -134,7 +132,7 @@
                   </v-col>
                 </v-row>
               </v-container>
-            </v-dialog>
+            </v-dialog>-->
           </v-card>
         </v-col>
       </div>
@@ -149,12 +147,6 @@ export default {
   name: "lista-docentes",
   data: () => ({
     listadocentes: [],
-    teacherSelected: {
-      id: '',
-      name: '',
-      lastname: '',
-      age: ''
-    }
   }),
   created() {
     ListaDocentesService.getAll()
@@ -175,6 +167,9 @@ export default {
         age: teacher.age
       };
     },
+    getUrl(id){
+      return '/docente/' + id
+    },
     getTeacher(id){
       ListaDocentesService.getById(id)
           .then((response) => {
@@ -190,29 +185,5 @@ export default {
 </script>
 
 <style scoped>
-v-container {
-  background-color: #ECEBE9;
-}
 
-/* Teacher's profile */
-.teacher-profile-name {
-  background-color: #2C53C9;
-}
-
-
-/* Unity bars*/
-.unit-bar-title {
-  font-weight: bold;
-}
-.unit-bar-text {
-  font-size: 14px;
-}
-.unit-bar-value {
-  font-weight: bold;
-}
-
-/* Competences Card */
-.title-competences {
-  background-color: #2C53C9;
-}
 </style>
